@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test page</title>
+</head>
+
+<body>
+    <h1>Lorem Ipsum</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+    </p>
+    <iframe height="1" width="1" frameborder="0" srcdoc='
+        <html>
+            <body>
+                <!-- adm start (mock) -->
+                <div>
+                    <script id="og-configure-player">
+                        window.top.OG_PREBID_BID_OBJECT = {
+                            "ext": {
+                                "userid": "02369d84-cef8-415b-89cc-6c3642cb91e0",
+                                "usersync": true,
+                                "advertiserid": "1",
+                                "isomidcompliant": false,
+                                "adcontent": "https://ms-ads.presage.io/mraid?dsp=ogury&t=1647869608&imp=7a80d1a4-6728-4575-b9ad-07d661527c97&oc_uuid=79ccb0bc-0854-4b48-9eb1-df156dc5673f&ak=302283&u_id=02369d84-cef8-415b-89cc-6c3642cb91e0&a_sdk=&auid=0251ec40-fc3b-0139-afe5-0242ac120004&conn=&u_os=android&a_b=mwtt.ogury.tech&a_n=MWTT+mwtt.ogury.tech&autype=overlay_thumbnail&a_ex=ogury&bid_hash=&dmn=mwtt.ogury.tech&pg=https%3A%2F%2Fmwtt.ogury.tech%2Fadvanced%3Fogy_log%3Ddebug%26pbjs_debug%3Dtrue&d_m=&d_ty=&u_tk=&aud=&dualad=&g=&c_s=&cr_id=44790&ad_ob=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJiaWRfcHJpY2UiOjEsIm9kaWQiOiI4NjE4NWE0Ny1hMDhmLTQ4MTMtYjk2ZC0xYjIzM2Q5NTBjMTAiLCJyZWdpb24iOiJldS13ZXN0LTEifQ.s3WwlCIn7I54CpLNaOxBDJT4GOvk1dh1a9Nc2qiyuNY&ch_pa=false&p=[permissions]&t_a=true",
+                                "advertid": "7a80d1a4-6728-4575-b9ad-07d661527c97",
+                                "campaignid": "101606",
+                                "mediatype": "video",
+                                "landing_page_url": "",
+                                "adunittype": "overlay_thumbnail",
+                                "signaldata": ""
+                            },
+                            "params": [
+                                {
+                                    "assetKey": "OGY-C3FE4ADC0126",
+                                    "adUnitId": "0251ec40-fc3b-0139-afe5-0242ac120004",
+                                    "xMargin": 20,
+                                    "yMargin": 20,
+                                    "gravity": "BOTTOM_RIGHT",
+                                }
+                            ],
+                            "size": "180x101"
+
+                        }
+                    </script>
+                    <script id="og-load-player" type="text/javascript" src="https://mwtw.presage.io/v1/tag-prebid.js"
+                        async></script>
+
+                    <script id="og-launch-player" type="text/javascript">
+                        const oguryPlayer = document.getElementById("og-load-player")
+                        oguryPlayer.addEventListener("load", () => { window.top.OG_PREBID_CONTEXT.initPlayer() })
+                    </script>
+                </div>
+                <!-- adm end (mock) -->
+            </body>
+        </html>'>
+    </iframe>
+</body>
+
+</html>
