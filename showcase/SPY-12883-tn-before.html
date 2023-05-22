@@ -1,0 +1,71 @@
+<html><body>
+<iframe id="rendering-iframe" class="Creative_contentIframe__d2Dfr" title="render" srcdoc="
+          <html>
+            <style>
+              html, body { padding: 0; margin: 0;}
+              body {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                overflow-y: scroll; 
+              }
+              body::-webkit-scrollbar {
+                display: none;
+              }
+            </style>
+            <script>
+              // We define a global variable, which indicates that we are running in the Demo Page environment, which is helpful for the OCS creatives
+              window.isOgyDemoPage = true;
+            </script>
+            <body>
+            <img 
+                src=&quot;https://demo-showcase.prod.cloud.ogury.io/resources/default/navigation-bar-mweb.jpg&quot;
+                width=&quot;100%&quot;  
+                style=&quot;vertical-align: middle&quot;
+                alt=&quot;Navigation bar&quot;
+              />
+              <header id=&quot;page-header&quot;></header>
+                
+               <img 
+                src=&quot;https://demo-showcase.prod.cloud.ogury.io/resources/default/content-mweb.jpg&quot;
+                width=&quot;100%&quot;  
+                style=&quot;vertical-align: middle&quot;
+                alt=&quot;Content&quot;
+              />
+                <div>
+                  <script id=&quot;og-configure-player&quot;>
+                    window.OG_SHOWCASE = {
+                            CONFIG : {
+                                bid_response: {
+                                    height: &quot;135&quot;,  
+                                    width: &quot;180&quot;,
+                                    ad_content: &quot;https://creative-console-api.prod.cloud.ogury.io/creatives/79941/preview.js?au=overlay_thumbnail&quot;,
+                                    media_type: &quot;image&quot;,
+                                    ad_unit_type: &quot;overlay_thumbnail&quot;,
+                                },
+                                ad_unit_config: {
+                                    asset_key: &quot;OGY-C3FE4ADC0126&quot;,
+                                    ad_unit_id: &quot;0251ec40-fc3b-0139-afe5-0242ac120004&quot;,
+                                    callbacks: {
+                                      on_error: (adUnit) => { window.parent.postMessage('adError', '*'); },
+                                      on_ad_show: ()=>{ console.log(&quot;The Ad had been successfully loaded.&quot;); }
+                                    },
+                                    params : {
+                                      header_selector : &quot;#page-header&quot;,
+                                      
+                                    }
+                                }
+                            }
+                        }
+                    </script>
+                    <script id=&quot;og-load-player&quot; type=&quot;text/javascript&quot; src=&quot;https://mwtw.presage.io/v6.8.1/player.js&quot;
+                        async></script>
+  
+                    <script id=&quot;og-launch-player&quot; type=&quot;text/javascript&quot;>
+                        const oguryPlayer = document.getElementById(&quot;og-load-player&quot;)
+                        oguryPlayer.addEventListener(&quot;load&quot;, () => { window.OG_TAG.initPlayer(&quot;SHOWCASE&quot;) })
+                    </script>
+                </div>
+            </body>
+          </html>
+        "></iframe>
+ </body></html>
