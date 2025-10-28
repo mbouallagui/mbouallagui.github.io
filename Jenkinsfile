@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        nodejs 'NodeJS_18' // Replace 'NodeJS_18' with the name you gave your Node.js installation in Jenkins
+    }
 
     environment {
         // IMPORTANT: Configure these as 'Secret text' credentials in Jenkins
