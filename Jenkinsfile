@@ -11,6 +11,7 @@ pipeline {
 
     stages {
         stage('Checkout') {
+            when { branch 'main' }
             steps {
                 git 'https://github.com/mbouallagui/mbouallagui.github.io.git'
             }
