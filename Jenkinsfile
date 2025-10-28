@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'git@github.com:mbouallagui/mbouallagui.github.io.git'
+                git 'https://github.com/mbouallagui/mbouallagui.github.io.git'
             }
         }
 
