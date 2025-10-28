@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:lts'
-            args '-u 0' // Run as root inside the container to avoid permission issues
-        }
-    }
+    agent any
 
     environment {
         // IMPORTANT: Configure these as 'Secret text' credentials in Jenkins
