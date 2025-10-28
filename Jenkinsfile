@@ -5,8 +5,8 @@ pipeline {
         // IMPORTANT: Configure these as 'Secret text' credentials in Jenkins
         // and replace 'BROWSERSTACK_USERNAME_ID' and 'BROWSERSTACK_ACCESS_KEY_ID'
         // with the actual IDs of your Jenkins credentials.
-        BROWSERSTACK_USERNAME = credentials('BROWSERSTACK_USERNAME_ID')
-        BROWSERSTACK_ACCESS_KEY = credentials('BROWSERSTACK_ACCESS_KEY_ID')
+        BROWSERSTACK_USERNAME = 'mehdibouallagui1'
+        BROWSERSTACK_ACCESS_KEY = 'ks1QMgftzqmNqaC2jNzM'
     }
 
     stages {
