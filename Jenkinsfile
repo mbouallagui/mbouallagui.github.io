@@ -10,19 +10,16 @@ pipeline {
     }
 
     stages {
-
-        stage('Install Dependencies') {
+        stage('Checkout') {
             steps {
-                sh 'npm install'
+                git 'git@github.com:mbouallagui/mbouallagui.github.io.git'
             }
         }
 
         stage('Run BrowserStack Tests') {
             steps {
-                browserstack(credentialsId: 'b0bed252-9ced-435a-b4ee-68b948ef9860') {
-                    sh 'npx wdio test.conf.js'
-                 }  
-                
+                sh 'npm install'
+                sh 'npx wdio test.conf.js'
             }
         }
     }
