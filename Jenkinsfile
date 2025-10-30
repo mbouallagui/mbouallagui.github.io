@@ -14,7 +14,7 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            when { branch 'main' }
+            when { branch 'browserstack-test' }
             steps {
                 git 'https://github.com/mbouallagui/mbouallagui.github.io.git'
             }
